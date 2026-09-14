@@ -307,7 +307,7 @@ export default function TeacherDashboard({ state, activeTab: propActiveTab = 'da
                 type="text"
                 className="form-input"
                 style={{ paddingLeft: '38px' }}
-                placeholder="Search student by name (e.g. Aman, Ananya, Ayush), roll no, or parent name..."
+                placeholder="Search student, roll no, or parent..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -320,7 +320,7 @@ export default function TeacherDashboard({ state, activeTab: propActiveTab = 'da
           </div>
 
           {/* Student Cards Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px' }}>
+          <div className="mobile-stack-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '16px' }}>
             {filteredStudents.map((st) => {
               const todayRec = state.todayAttendance?.records[st.id]?.status || 'Present';
               return (

@@ -120,9 +120,9 @@ export default function ProfileCard({
               </p>
 
               {/* Quick Info Grid */}
-              <div style={{
+              <div className="profile-metrics-grid" style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
                 gap: '12px'
               }}>
                 <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
@@ -273,9 +273,9 @@ export default function ProfileCard({
               </p>
 
               {/* Quick Info Grid */}
-              <div style={{
+              <div className="profile-metrics-grid" style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
                 gap: '12px'
               }}>
                 <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
@@ -425,9 +425,9 @@ export default function ProfileCard({
               </p>
 
               {/* Quick Info Grid */}
-              <div style={{
+              <div className="profile-metrics-grid" style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
                 gap: '12px'
               }}>
                 <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
@@ -569,9 +569,9 @@ export default function ProfileCard({
               </p>
 
               {/* Quick Info Grid */}
-              <div style={{
+              <div className="profile-metrics-grid" style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
                 gap: '12px'
               }}>
                 <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>

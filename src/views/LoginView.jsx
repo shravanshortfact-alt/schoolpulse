@@ -118,10 +118,10 @@ export default function LoginView({ state, onLoginSuccess }) {
         </div>
 
         {/* Login Box Grid */}
-        <div style={{
+        <div className="mobile-stack-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: '20px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+          gap: '16px',
           alignItems: 'start'
         }}>
           {/* Main Login Form */}
