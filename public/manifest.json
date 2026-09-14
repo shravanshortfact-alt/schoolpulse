@@ -1,0 +1,16 @@
+{
+  "name": "SchoolPulse School Management & Student Support",
+  "short_name": "SchoolPulse",
+  "description": "Better communication. Better support. Better school life.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#6366F1",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
