@@ -132,7 +132,7 @@ export default function ReportCardModal({ isOpen, onClose, reportCard, schoolInf
           {/* Aggregate Summary Cards */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
             gap: '12px',
             marginBottom: '20px'
           }}>

@@ -15,20 +15,22 @@ export default function EmergencyBroadcastBanner({ alert, isPrincipal }) {
     <div style={{
       background: 'linear-gradient(90deg, #DC2626 0%, #EF4444 50%, #991B1B 100%)',
       color: '#FFF',
-      padding: '10px 24px',
+      padding: '8px 14px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      fontSize: '0.88rem',
+      fontSize: '0.85rem',
       fontWeight: 600,
       boxShadow: '0 4px 16px rgba(220, 38, 38, 0.4)',
       position: 'relative',
-      zIndex: 90
+      zIndex: 90,
+      flexWrap: 'wrap',
+      gap: '8px'
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', overflow: 'hidden' }}>
-        <AlertTriangle size={20} color="#FFF" style={{ flexShrink: 0 }} className="animate-pulse" />
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ background: '#FFF', color: '#991B1B', padding: '2px 8px', borderRadius: '4px', fontSize: '0.75rem', fontWeight: 800 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', flex: 1 }}>
+        <AlertTriangle size={18} color="#FFF" style={{ flexShrink: 0 }} className="animate-pulse" />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+          <span style={{ background: '#FFF', color: '#991B1B', padding: '2px 6px', borderRadius: '4px', fontSize: '0.72rem', fontWeight: 800 }}>
             URGENT BROADCAST
           </span>
           <span>{alert.title}:</span>

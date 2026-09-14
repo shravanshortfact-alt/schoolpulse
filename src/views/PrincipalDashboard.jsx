@@ -213,7 +213,7 @@ export default function PrincipalDashboard({ state, activeTab: propActiveTab = '
       {/* TAB 2: PUBLISH SCHOOL NOTICE PAGE */}
       {/* ======================================================== */}
       {currentTab === 'notices' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
           <div className="glass-card">
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
               <Megaphone size={22} color="var(--color-accent-amber)" />

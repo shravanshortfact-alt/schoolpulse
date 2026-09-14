@@ -34,8 +34,8 @@ export default function NotificationPanel({ isOpen, onClose, state }) {
       justifyContent: 'flex-end'
     }}>
       <div style={{
-        width: '400px',
-        maxWidth: '100%',
+        width: '100%',
+        maxWidth: '400px',
         height: '100%',
         background: '#0F172A',
         borderLeft: '1px solid var(--color-border)',

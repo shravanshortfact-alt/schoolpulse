@@ -81,36 +81,38 @@ export default function LoginView({ state, onLoginSuccess }) {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '30px 20px',
+      padding: '16px 12px',
       background: 'radial-gradient(ellipse at top, #1E1B4B 0%, #0B0F19 85%)'
     }}>
       <div style={{ maxWidth: '960px', width: '100%' }}>
         {/* School Header Banner */}
-        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '24px' }}>
           <img
             src={school.logo}
             alt={school.name}
             style={{
-              height: '80px',
-              maxWidth: '340px',
+              height: 'auto',
+              maxHeight: '60px',
+              maxWidth: '85vw',
               objectFit: 'contain',
-              marginBottom: '12px',
+              marginBottom: '10px',
               filter: 'drop-shadow(0 4px 12px rgba(99, 102, 241, 0.4))'
             }}
           />
           <h1 style={{
-            fontSize: '2.2rem',
+            fontSize: 'clamp(1.4rem, 4vw, 2.2rem)',
             fontWeight: 800,
             background: 'linear-gradient(135deg, #FFFFFF 0%, #94A3B8 100%)',
             WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
+            WebkitTextFillColor: 'transparent',
+            lineHeight: 1.2
           }}>
             {school.name}
           </h1>
-          <p style={{ fontSize: '0.9rem', color: '#FBBF24', fontWeight: 600, marginTop: '2px' }}>
+          <p style={{ fontSize: '0.85rem', color: '#FBBF24', fontWeight: 600, marginTop: '2px' }}>
             "{school.motto}"
           </p>
-          <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
+          <p style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
             {school.tagline}
           </p>
         </div>
@@ -118,13 +120,13 @@ export default function LoginView({ state, onLoginSuccess }) {
         {/* Login Box Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '24px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '20px',
           alignItems: 'start'
         }}>
           {/* Main Login Form */}
-          <div className="glass-card" style={{ padding: '28px' }}>
-            <h2 style={{ fontSize: '1.25rem', marginBottom: '16px', color: 'var(--color-text-primary)' }}>
+          <div className="glass-card" style={{ padding: '20px' }}>
+            <h2 style={{ fontSize: '1.15rem', marginBottom: '14px', color: 'var(--color-text-primary)' }}>
               Portal Sign In
             </h2>
 

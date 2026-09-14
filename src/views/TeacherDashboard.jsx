@@ -162,7 +162,7 @@ export default function TeacherDashboard({ state, activeTab: propActiveTab = 'da
           </div>
 
           {/* Executive Faculty Biography, Degrees & Credentials */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px' }}>
 
             {/* Card 1: Educational Degrees & Qualifications */}
             <div className="glass-card" style={{ background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(15, 23, 42, 0.7) 100%)', border: '1px solid rgba(99, 102, 241, 0.3)' }}>
@@ -320,7 +320,7 @@ export default function TeacherDashboard({ state, activeTab: propActiveTab = 'da
           </div>
 
           {/* Student Cards Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(285px, 1fr))', gap: '18px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px' }}>
             {filteredStudents.map((st) => {
               const todayRec = state.todayAttendance?.records[st.id]?.status || 'Present';
               return (
@@ -411,7 +411,7 @@ export default function TeacherDashboard({ state, activeTab: propActiveTab = 'da
       {/* VIEW 3: HOMEWORK MANAGER */}
       {/* ======================================================== */}
       {currentTab === 'homework' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px' }}>
           <div className="glass-card">
             <h3 style={{ fontSize: '1.1rem', marginBottom: '16px' }}>Assign New Homework</h3>
             <form onSubmit={handleCreateHomework}>

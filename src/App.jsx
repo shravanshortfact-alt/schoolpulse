@@ -21,6 +21,7 @@ export default function App() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const [isNotificationsOpen, setIsNotificationsOpen] = useState(false);
   const [manualOffline, setManualOffline] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const unsubscribe = storageService.subscribe((newState) => {
@@ -35,6 +36,7 @@ export default function App() {
   const handleLogout = () => {
     storageService.setActiveUser(null);
     setActiveTab('dashboard');
+    setIsMobileMenuOpen(false);
   };
 
   const renderActiveView = () => {
@@ -44,6 +46,7 @@ export default function App() {
           state={state}
           onLoginSuccess={(user) => {
             setActiveTab('dashboard');
+            setIsMobileMenuOpen(false);
           }}
         />
       );
@@ -82,15 +85,19 @@ export default function App() {
           manualOffline={manualOffline}
           setManualOffline={setManualOffline}
           onLogout={handleLogout}
+          isMobileMenuOpen={isMobileMenuOpen}
+          onToggleMobileMenu={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         />
 
-        <div style={{ display: 'flex', flex: 1 }}>
+        <div className="app-body-layout">
           {activeUser && (
             <Sidebar
               activeTab={activeTab}
               setActiveTab={setActiveTab}
               activeRole={activeRole}
               onOpenLogin={handleLogout}
+              isOpen={isMobileMenuOpen}
+              onClose={() => setIsMobileMenuOpen(false)}
             />
           )}
 

@@ -104,7 +104,7 @@ export default function ProfileCard({
             </div>
 
             {/* Profile Info Details */}
-            <div style={{ flex: 1, minWidth: '260px' }}>
+            <div style={{ flex: 1, minWidth: '0', width: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', marginBottom: '6px' }}>
                 <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#F8FAFC' }}>{st.name}</h1>
                 <span className="badge badge-info" style={{ fontSize: '0.82rem', padding: '4px 12px' }}>
@@ -260,7 +260,7 @@ export default function ProfileCard({
             </div>
 
             {/* Profile Info Details */}
-            <div style={{ flex: 1, minWidth: '260px' }}>
+            <div style={{ flex: 1, minWidth: '0', width: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', marginBottom: '6px' }}>
                 <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#F8FAFC' }}>Mr. Ramesh Yadav</h1>
                 <span className="badge badge-success" style={{ fontSize: '0.82rem', padding: '4px 12px' }}>
@@ -412,7 +412,7 @@ export default function ProfileCard({
             </div>
 
             {/* Profile Info Details */}
-            <div style={{ flex: 1, minWidth: '260px' }}>
+            <div style={{ flex: 1, minWidth: '0', width: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', marginBottom: '6px' }}>
                 <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#F8FAFC' }}>Mrs. Priya Verma</h1>
                 <span className="badge badge-purple" style={{ fontSize: '0.82rem', padding: '4px 12px' }}>
@@ -553,7 +553,7 @@ export default function ProfileCard({
             </div>
 
             {/* Profile Info Details */}
-            <div style={{ flex: 1, minWidth: '260px' }}>
+            <div style={{ flex: 1, minWidth: '0', width: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', marginBottom: '6px' }}>
                 <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#F8FAFC' }}>Dr. Anil Singh</h1>
                 <span className="badge badge-warning" style={{ fontSize: '0.82rem', padding: '4px 12px' }}>

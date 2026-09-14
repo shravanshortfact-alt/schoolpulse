@@ -132,8 +132,8 @@ export default function StudentJourneyView({ state }) {
             background: 'rgba(15, 23, 42, 0.6)'
           }}>
             {/* Left: Search & Class Selectors */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', flex: 1 }}>
-              <div style={{ position: 'relative', minWidth: '220px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', flex: 1, width: '100%' }}>
+              <div style={{ position: 'relative', flex: 1, minWidth: '180px' }}>
                 <Search size={16} color="var(--color-text-muted)" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }} />
                 <input
                   type="text"
@@ -175,7 +175,7 @@ export default function StudentJourneyView({ state }) {
                     setSelectedStudentId(matching[0].id);
                   }
                 }}
-                style={{ width: '160px', fontSize: '0.85rem' }}
+                style={{ width: 'auto', flex: 1, minWidth: '130px', fontSize: '0.85rem' }}
               >
                 <option value="ALL">All Classes ({state.students.length})</option>
                 {state.classes.map(c => <option key={c} value={c}>Class {c}</option>)}
@@ -183,13 +183,13 @@ export default function StudentJourneyView({ state }) {
             </div>
 
             {/* Right: Select Student from Directory */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', width: '100%' }}>
               <span style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>Select Student Profile:</span>
               <select
                 className="form-select"
                 value={student ? student.id : ''}
                 onChange={(e) => setSelectedStudentId(e.target.value)}
-                style={{ width: '220px', fontSize: '0.85rem', fontWeight: 600 }}
+                style={{ flex: 1, minWidth: '180px', fontSize: '0.85rem', fontWeight: 600 }}
               >
                 {filteredStudents.map(s => (
                   <option key={s.id} value={s.id}>
@@ -288,7 +288,7 @@ export default function StudentJourneyView({ state }) {
           </div>
 
           {/* Grid Row 2: Trend Visualization & Chronological Support Timeline */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '18px' }}>
             {/* Trend Visualization Chart */}
             <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
@@ -579,7 +579,7 @@ export default function StudentJourneyView({ state }) {
           </div>
 
           {/* Faculty Directory Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '18px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '18px' }}>
             {filteredFaculty.map((f) => {
               const isPresent = f.status === 'Present';
               const isLate = f.status === 'Late Check-in';
